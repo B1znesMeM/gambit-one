@@ -1,0 +1,817 @@
+@use 'sass:math'
+@use 'sass:color'
+
+@use 'blocks/shery' as *
+@use 'blocks/reset' as *
+@use 'config' as *
+
+@use 'blocks/lenis' as *
+
+#loader 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: $accent
+    z-index: 1000
+    overflow: hidden
+    div
+        margin-top: 1.948vw
+        margin-left: 1.948vw
+        font-size: 12.987vw
+        font-family: Anticva, sans-serif
+
+.container
+    margin-left: 3.052vw
+    margin-right: 3.052vw
+
+header
+    margin-top: 2.597vw
+    width: 100%
+
+.header__inner
+    display: flex
+    justify-content: space-between
+
+.nav
+    ul
+        width: 33.117vw
+        display: flex
+        flex-wrap: wrap
+        gap: 1.948vw
+        text-transform: uppercase
+
+.header__inner-text
+    width: 11.688vw
+    font-family: ZTN-regular, sans-serif
+    h4
+        font-size: 1.299vw
+        line-height: 1.1
+        text-transform: uppercase
+
+/* START */
+
+.start
+    margin-top: 3.896vw
+
+.start__inner-text-top
+    text-align: center
+    width: 100%
+    img
+        width: 100%
+
+.start__inner-text-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    margin-top: 1.299vw
+
+/* Problem to width */
+
+.start__inner-text-bottom-left
+    width: 42.208vw
+    img
+        width: 100%
+
+/* end */
+
+.start__inner-text-bottom-right
+    width: 27.273vw
+    text-align: end
+    h4
+        font-size: 1.299vw
+        font-family: ZTN-regular, sans-serif
+        width: 80%
+        text-align: start
+        margin: 0px 3.052vw 1.299vw 3.896vw
+        line-height: 1.1
+        text-transform: uppercase
+    div
+        display: inline-block
+        width: 27.273vw
+        height: 27.273vw
+        background-color: $textcolor
+
+.start__inner-text-bottom-left-text
+    font-size: 18.727vw
+    display: flex
+    margin-left: 15vw
+    
+
+/* ABOUT */
+
+.about__inner-left
+    width: 50%
+    img
+        width: 100%
+
+.about
+    margin-top: 15.519vw
+
+.about__inner
+    display: flex
+    justify-content: space-between
+    gap: 3.052vw
+
+.about__inner-right
+    display: flex
+    flex-direction: column
+    width: 85%
+
+.about__inner-right-top
+    h3
+        text-align: center
+        margin-bottom: 2.597vw
+        font-family: Anticva, sans-serif
+        text-transform: uppercase
+    p
+        font-size: 2.273vw
+        margin-bottom: 2.403vw
+        width: 90%
+        line-height: 1.2
+
+.about__inner-right-line
+    position: relative
+    width: 100%
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 0.065vw
+        background-color: $textcolor
+
+        
+.about__inner-right-bottom
+    margin-top: 2.403vw
+    font-size: 2.273vw
+    margin-left: 19px
+    position: relative
+    height: 100%
+    li
+        position: absolute
+        text-transform: uppercase
+        span
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                width: 0.455vw
+                height: 0.455vw
+                background-color: $textcolor
+                border-radius: 50%
+                top: 50%
+                left: -19px
+                transform: translate(0, -55%)
+    [aria-valuetext="go"]
+        left: 40%
+
+    [aria-valuetext="lararunky"]
+        left: 60%
+
+    [aria-valuetext="shashki"]
+        left: 10%
+        top: 22%
+
+    [aria-valuetext="peteya"]
+        left: 39%
+        top: 17%
+
+    [aria-valuetext="kosti"]
+        left: 66%
+        top: 30%
+
+    [aria-valuetext="cega"]
+        left: 90%
+        top: 19%
+
+    [aria-valuetext="pachisi"]
+        left: 2%
+        top: 42%
+    [aria-valuetext="mafia"]
+        left: 38%
+        top: 36%
+    [aria-valuetext="mankala"]
+        left: 33%
+        top: 55%
+    [aria-valuetext="cyanci"]
+        left: 85%
+        top: 43%
+    [aria-valuetext="nardi"]
+        left: 5%
+        top: 63%
+    [aria-valuetext="chaturanga"]
+        left: 67%
+        top: 59%
+    [aria-valuetext="domino"]
+        top: 86%
+    [aria-valuetext="lubo"]
+        left: 36%
+        top: 78%
+    [aria-valuetext="ura"]
+        left: 57%
+        top: 83%
+    [aria-valuetext="shatrang"]
+        left: 75%
+        top: 79%
+
+/* TEACHER */  
+
+.teacher
+    position: relative
+    margin-top: 15vw
+    background-color: $bg-teacher
+    width: 100%
+    height: 50vw
+
+.teacher__inner
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    background-color: $bg-teacher-inner
+    padding: 2.597vw 6.494vw 2.597vw 6.494vw
+    h3
+        font-size: 2.273vw
+        line-height: 1.3
+        margin-bottom: 4.545vw
+    h2
+        font-size: 3.896vw
+        line-height: 1.3
+        margin-top: 4.545vw  
+        text-transform: uppercase
+
+.teacher__inner-image
+    img
+        width: 7vw
+
+/* IMPORTANT */
+
+.important
+    margin-top: 10.247vw
+
+.important__inner
+    font-family: Anticva, sans-serif
+    font-size: 10.987vw
+    text-align: center
+    text-transform: uppercase
+
+.important__inner-items
+    display: flex
+    flex-direction: column
+    gap: 10vw
+
+.important__inner-item
+    display: flex
+    flex-direction: column
+    gap: 3vw
+    img
+        width: 15vw
+        margin: 0 auto
+    div
+        line-height: 1.2
+
+/* NEWS */ 
+
+.news
+    margin-top: 18.494vw
+
+.news__inner-items
+    display: flex
+
+.news__inner-item
+    font-size: 1.299vw
+    font-family: Anticva, sans-serif
+    p
+        line-height: 1.1
+    &-one 
+        width: 22.727vw
+        #news__inner-item-n
+            font-family: Editorial, sans-serif
+            font-size: 12.987vw
+            text-align: center
+        p
+            margin-top: 0.649vw
+    &-image-one  
+        width: 100%
+        img
+            width: 100%
+
+    &-two 
+        width: 22.727vw
+        margin-left: 1.948vw
+        margin-top: 9.091vw
+        #news__inner-item-e
+            font-family: Editorial, sans-serif
+            font-size: 12.987vw
+            text-align: center
+        p
+            margin-top: 0.649vw
+    &-image-two  
+        width: 100%
+        img
+            width: 100%
+    &-three 
+        width: 16.234vw
+        margin-left: 3.247vw
+        #news__inner-item-w
+            font-family: Editorial, sans-serif
+            font-size: 12.987vw
+            text-align: center
+        p
+            margin-top: 0.649vw
+    &-image-three  
+        width: 100%
+        img
+            width: 100%
+    &-four 
+        width: 16.234vw
+        margin-left: 5.195vw
+        margin-top: 16.234vw
+        #news__inner-item-s
+            font-family: Editorial, sans-serif
+            font-size: 12.987vw
+            text-align: center
+        p 
+            margin-top: 0.649vw
+    &-image-four  
+        width: 100%
+        img
+            width: 100%
+
+    &-div 
+        display: flex
+    
+/* Contacts */  
+
+.contacts
+    font-family: Anticva, sans-serif
+    margin-top: 15.987vw
+    text-align: center
+    text-transform: uppercase
+    display: flex
+    flex-direction: column
+    h4
+        font-size: 1.299vw
+        margin-bottom: 6.494vw
+    h1
+        font-size: 6.494vw
+    div
+        margin: 0 auto
+        div
+            display: flex
+            gap: 6.494vw   
+            align-items: center
+            text-align: center
+
+    .contacts__inner-item
+        position: relative
+        overflow: hidden
+        height: 6.442vw
+        display: block
+        margin-bottom: 6.494vw
+        transition: transform .3s ease, opacity .3s ease
+        span
+            font-size: 3vw
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translate(-50%, 150%)
+            opacity: 0
+            transition: transform .3s ease, opacity .3s ease
+        h1
+            opacity: 1
+            transform: translateY(0)
+            transition: transform .3s ease, opacity .2s ease
+        &:hover span 
+            opacity: 1
+            transform: translate(-50%, -50%)
+        &:hover h1
+            opacity: 0
+            transform: translateY(-100%)
+        
+        
+
+/* SPORTS */
+.sports
+    margin-top: 19.481vw
+
+.sports__inner
+    position: relative
+    h1
+        position: relative
+        font-size: 7.792vw
+        text-align: center
+        z-index: 4
+        margin-bottom: -4.383vw
+    .sports__inner-big
+        position: inherit
+        width: 100%
+        z-index: 2
+
+.sports__inner-image
+    position: relative
+
+.sports__inner-bottom-img
+    position: absolute
+    right: 9.091vw
+    bottom: -11vw
+
+.sports__inner-bottom-img-div
+    position: relative
+    font-size: 1.2vw
+    width: 100%
+    line-height: 1.2
+    z-index: 1
+    img
+        width: 25vw
+    div
+        width: 15.234vw
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+/* bottom-text */
+.bottom-text
+    margin-top: 19.481vw
+    margin-left: 9.74vw
+
+.bottom-text__inner-image
+    text-align: end
+    margin-right: 7.792vw 
+    img
+        width: 20vw
+
+.bottom-text__inner-text
+    display: flex
+    text-align: justify
+
+.bottom-text__inner-one
+    width: 19.481vw
+
+.bottom-text__inner-two
+    width: 19.481vw
+    margin-top: 15.286vw
+    span
+        display: flex
+        justify-content: end   
+        margin-top: 0.974vw     
+
+/* Footer */
+
+.footer__inner
+    width: 100%
+    margin-top: 1.948vw
+    font-family: Editorial, sans-serif
+    div
+        font-size: 12.007vw
+.letter 
+    display: inline-block
+    opacity: 0
+
+/* mobile-nav */   
+.mobile-nav
+    position: fixed
+    z-index: 222
+    width: 6.494vw
+    height: 2.547vw
+    top: 4vw
+    left: 50%
+    transform: translate(-50%, 0)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    display: none
+    &-line 
+        width: 100%
+        height: .2vw
+        background-color: $textcolor
+
+.mobile-nav__block
+    overflow: auto
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: #fffbe5
+    z-index: 100
+    transition: transform .5s cubic-bezier(.7,.09,.24,.85)
+    transform: translateY(-100%)
+    font-size: 11vw
+    padding-top: 15vw 
+    &__inner
+        height: 100%
+    [arai-mobile='mobile-li-1']
+        margin-bottom: 5vw
+        text-align: center
+    [arai-mobile='mobile-li-2']
+        margin-bottom: 5vw
+        text-align: center
+    [arai-mobile='mobile-li-3']
+        margin-bottom: 5vw
+        text-align: center
+    [arai-mobile='mobile-li-4']
+        margin-bottom: 5vw
+        text-align: center
+    [arai-mobile='mobile-li-5']
+        margin-bottom: 5vw
+        text-align: center
+    [arai-mobile='mobile-li-6']
+        margin-bottom: 5vw
+        text-align: center
+    img
+        position: absolute
+        top: 5vw
+        left: 5vw
+        width: 20vw
+@media screen and ( max-width: 1024px )
+    #loader div
+        font-size: 30vw
+
+    .important__inner-items
+        gap: 18vw
+    .important__inner-item
+        gap: 5vw
+        img
+            width: 22vw
+    .header__inner-text
+        width: 18vw
+        h4
+            font-size: 1.8vw
+    .start__inner-text-bottom-right
+        h4
+            font-size: 1.8vw
+            width: auto
+
+    .start__inner-text-bottom-right
+        width: 35vw
+        height: 35vw
+        div
+            width: 35vw
+            height: 35vw
+
+    .nav ul
+        width: 42vw
+    
+    .about__inner-right-top p
+        font-size: 2.7vw
+    .about__inner-right-bottom
+        font-size: 2.5vw
+    .teacher__inner h3
+        font-size: 3vw
+    .teacher__inner h2
+        font-size: 4.2vw
+    .teacher__inner-image img
+        width: 8vw
+
+    .news__inner-item
+        font-size: 1.8vw
+    
+    .news__inner-item
+        font-size: 1.8vw
+        &-one 
+            width: 23.727vw
+        &-two 
+            width: 23.727vw
+            margin-left: 1.948vw
+            margin-top: 9.091vw
+        &-three 
+            width: 18.234vw
+            margin-left: 3.247vw
+        &-four 
+            width: 18.234vw
+            margin-left: 5.195vw
+            margin-top: 16.234vw
+
+    .sports__inner-bottom-img-div img
+        width: 30vw
+    .sports__inner-bottom-img-div div
+        font-size: 1.6vw
+        width: 25vw
+
+    .bottom-text__inner-one
+        width: 22vw
+    .bottom-text__inner-two
+        width: 22vw
+        margin-top: 17vw
+
+    .bottom-text__inner-image img
+        width: 23vw
+        margin-top: 2vw
+
+    .nav ul
+        display: none
+
+    .mobile-nav
+        display: flex
+        
+@media screen and ( max-width: 853px )
+        
+    .header__inner-text
+        width: 22vw
+        h4
+            font-size: 2.5vw
+    .start__inner-text-bottom-left-text
+        font-size: 22vw
+    .start__inner-text-bottom-right h4
+        font-size: 2.5vw
+        margin: 0 2.052vw 1.299vw 1.896vw
+    .start__inner-text-bottom
+        height: 50vw
+        align-items: flex-start
+    .start__inner-text-bottom-left
+        margin-top: 15vw
+    
+    .about
+        margin-top: 0
+
+    .about__inner
+        display: block
+
+    .about__inner-left
+        width: 50%
+        transform: rotate(90deg)
+        margin: 0 auto
+
+    .about__inner-right
+        width: 100%
+
+    .about__inner-right-top
+        h3
+            font-size: 4vw
+        p
+            font-size: 5vw
+            text-align: start
+
+    .about__inner-right-bottom
+        height: 40vw
+        font-size: 4vw
+
+    .about__inner-right-bottom [aria-valuetext="cega"]
+        left: 87%
+        top: 19%
+    .about__inner-right-bottom [aria-valuetext="cyanci"]
+        left: 83%
+        top: 43%
+    .about__inner-right-bottom [aria-valuetext="shatrang"]
+        left: 73%
+        top: 79%
+    .about__inner-right-bottom li span:before
+        left: -1.5vw
+        width: .7vw
+        height: 0.7vw
+
+    .teacher
+        height: 70vw
+    .teacher__inner
+        left: 40%
+        transform: translate(-34%,-50%)
+        h3
+            font-size: 3.9vw
+        h2
+            font-size: 5.5vw
+        .teacher__inner-image img
+            width: 10vw
+    .important__inner
+        font-size: 12.7vw
+    .important__inner-item img
+        width: 24vw
+
+    .news__inner-item
+        font-size: 2vw
+
+    .contacts
+        text-align: start
+        h4
+            font-size: 3vw
+        h1
+            font-size: 6vw
+        div
+            margin: 0
+        div div
+            display: block
+            text-align: start
+
+    .sports__inner h1
+        font-size: 9vw
+    
+    .sports__inner-bottom-img-div img
+        width: 35vw
+
+    .sports__inner-bottom-img-div div
+        font-size: 1.8vw
+
+    .bottom-text__inner-one
+        width: 25vw
+    .bottom-text__inner-two
+        width: 25vw
+        margin-top: 22vw
+
+    .bottom-text__inner-image img
+        width: 26vw
+
+    .contacts 
+        .contacts__inner-item
+            overflow: inherit
+            height: auto
+            display: block
+            margin-bottom: 6.494vw
+            h1
+                opacity: 1
+                transform: translateY(0%)
+            span 
+                display: none
+            &:hover span 
+                opacity: 1
+                transform: translate(0%)
+            &:hover h1
+                opacity: 1
+                transform: translateY(0%)
+
+@media screen and ( max-width: 540px )
+    .about__inner-left
+        width: 70%
+    .news__inner-items
+        display: block
+    .contacts, .news__inner-item-div
+        justify-content: space-around
+    .news__inner-item-div-two
+        margin-top: 20vw
+    .news__inner-item-one
+        width: 35%
+    .news__inner-item-two
+        width: 35%
+    .news__inner-item-three
+        width: 28%
+    .news__inner-item-four
+        width: 28%
+    .news__inner-item
+        font-size: 2.7vw
+        p
+            line-height: 1.3
+
+    .bottom-text__inner-one
+        width: 30vw
+    .bottom-text__inner-two
+        width: 30vw
+        margin-top: 25vw
+
+    .sports__inner-bottom-img-div img
+        width: 40vw
+    .sports__inner-bottom-img-div div
+        font-size: 2.2vw
+        width: 30vw
+    .news__inner-item-one #news__inner-item-n
+        font-size: 20vw
+    .news__inner-item-two #news__inner-item-e
+        font-size: 20vw
+    .news__inner-item-three #news__inner-item-w
+        font-size: 20vw
+    .news__inner-item-four #news__inner-item-s
+        font-size: 20vw
+
+    .contacts h1
+        font-size: 7vw
+    .contacts h4
+        font-size: 3.5vw
+
+    .header__inner-text
+        width: 26vw
+        h4
+            font-size: 3vw
+
+    .start__inner-text-bottom-right h4
+        font-size: 3vw
+    .start__inner-text-bottom-right, .start__inner-text-bottom-right div
+        width: 40vw
+        height: 40vw
+
+    .important__inner-item img
+        width: 28vw
+
+    .news__inner-item
+        font-size: 3vw
+
+    .news__inner-item-one, .news__inner-item-two
+        width: 40%
+
+    .news__inner-item-four, .news__inner-item-three
+        width: 32%
+
+    .contacts h1
+        font-size: 8.5vw
+    .contacts h4
+        font-size: 4vw
+
+    .bottom-text__inner-image img
+        width: 30vw
+
+    .mobile-nav
+        width: 10vw
+        height: 3.5vw
+        &-line 
+            height: 0.2vw
